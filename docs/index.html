@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loaner - Simple Loan Tracking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #86868b;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            text-align: left;
+            margin: 40px 0;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .feature-text {
+            flex: 1;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #1d1d1f;
+        }
+
+        .feature-desc {
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        .app-store-button {
+            display: inline-block;
+            margin: 30px 0;
+        }
+
+        .app-store-button img {
+            height: 50px;
+            width: auto;
+        }
+
+        .links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e7;
+        }
+
+        .links a {
+            color: #0071e3;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #86868b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">💰</div>
+        <h1>Loaner</h1>
+        <p class="tagline">Simple loan tracking for personal lenders</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <div class="feature-text">
+                    <div class="feature-title">Daily Compound Interest</div>
+                    <div class="feature-desc">Automatically calculate and track interest that compounds daily</div>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💵</div>
+                <div class="feature-text">
+                    <div class="feature-title">Payment Tracking</div>
+                    <div class="feature-desc">Log payments with automatic allocation between principal and interest</div>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📄</div>
+                <div class="feature-text">
+                    <div class="feature-title">CSV Export</div>
+                    <div class="feature-desc">Export complete transaction history for tax records</div>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-text">
+                    <div class="feature-title">Private & Secure</div>
+                    <div class="feature-desc">All data stays on your device. No tracking or data collection.</div>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-text">
+                    <div class="feature-title">Works Offline</div>
+                    <div class="feature-desc">No internet connection required. Your data, your device.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Coming Soon to the App Store</strong><br>
+            Loaner is currently in review. Check back soon!
+        </div>
+
+        <div class="links">
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="mailto:bits@brownster.com">Contact</a>
+        </div>
+    </div>
+</body>
+</html>

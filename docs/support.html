@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loaner - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #1d1d1f;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .faq-item {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box {
+            background: #0071e3;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loaner Support</h1>
+
+        <p>Welcome to Loaner support! Here you'll find answers to common questions and information about how to get help.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>How do I create my first loan?</h3>
+            <p>Tap the <strong>+</strong> button in the top right corner and select <strong>"Create New Loan"</strong>. Enter the borrower's name, start date, initial loan amount, and interest rate. The app will track daily compound interest automatically.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I log a payment?</h3>
+            <p>Open a loan and tap <strong>"Log Payment"</strong>. You can choose to apply payments to interest first (recommended), principal only, or enter a custom split. The app shows you exactly how the payment will be allocated before you save it.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I add more money to an existing loan?</h3>
+            <p>Open the loan and tap <strong>"Add Investment"</strong>. This increases the principal balance and interest will be calculated on the new total.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How is interest calculated?</h3>
+            <p>Loaner uses daily compound interest. Each day, interest is calculated as: <code>principal × (annual rate / 365)</code>. This interest is added to the balance, and the next day's interest is calculated on the new total.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I export my loan data?</h3>
+            <p>Yes! Open any loan and tap <strong>"Export Data"</strong>. This creates a CSV file with all transactions that you can share via email, save to Files, or use for tax purposes. The export includes total interest paid, which may be taxable income.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I import loan data?</h3>
+            <p>Yes! On the main loans list, tap the <strong>+</strong> button and select <strong>"Import from CSV"</strong>. You can only import CSV files that were exported from Loaner - the format must match exactly.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I delete a transaction?</h3>
+            <p>Open the loan, find the transaction in the history, and swipe left. Tap <strong>"Delete"</strong> and confirm. The loan balance will automatically recalculate.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I delete a loan?</h3>
+            <p>On the main loans list, swipe left on the loan you want to delete. This will delete the loan and all its transactions permanently.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Is my data backed up?</h3>
+            <p>All loan data is stored locally on your device. If you have iCloud Backup enabled for your device, your loan data is included in encrypted backups. Loaner does not transmit any data to external servers.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I edit a transaction after creating it?</h3>
+            <p>Currently, you can delete and re-create transactions, but direct editing is not available in v1.0. This keeps the transaction history simple and reliable.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What happens if I enter a payment with a future date?</h3>
+            <p>The app validates that payment dates cannot be in the future or before the loan's start date. This ensures accurate interest calculations.</p>
+        </div>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li><strong>iOS:</strong> 17.0 or later</li>
+            <li><strong>Devices:</strong> iPhone, iPad</li>
+            <li><strong>Storage:</strong> Minimal - all data stored locally</li>
+            <li><strong>Internet:</strong> Not required - works completely offline</li>
+        </ul>
+
+        <h2>Privacy & Security</h2>
+        <p>Your privacy is our priority:</p>
+        <ul>
+            <li>All data stays on your device</li>
+            <li>No data collection or tracking</li>
+            <li>No internet connection required</li>
+            <li>Protected by your device's security</li>
+        </ul>
+        <p>Read our full <a href="privacy.html">Privacy Policy</a></p>
+
+        <h2>Known Issues & Limitations</h2>
+        <ul>
+            <li>Transactions cannot be edited (only deleted and re-created)</li>
+            <li>Interest compounds daily only (no monthly or annual compounding options)</li>
+            <li>CSV import only accepts files exported by Loaner</li>
+        </ul>
+
+        <h2>Feature Requests</h2>
+        <p>Have an idea for a new feature? We'd love to hear from you! Email us at <a href="mailto:bits@brownster.com">bits@brownster.com</a> with your suggestions.</p>
+
+        <div class="contact-box">
+            <h2>Need More Help?</h2>
+            <p>If you can't find the answer to your question, please reach out:</p>
+            <p><a href="mailto:bits@brownster.com">bits@brownster.com</a></p>
+            <p style="margin-top: 10px; font-size: 14px; opacity: 0.9;">We typically respond within 1-2 business days.</p>
+        </div>
+    </div>
+</body>
+</html>
